@@ -88,7 +88,7 @@ define( function() {
 
         drawSnake:function(snake) {
             for (var i = 0; i < snake.length; i++) {
-                context.fillStyle = '#5dc5f9';
+                context.fillStyle = '#e7e7e7';
                 context.fillRect((snake[i].x * this.BOXSIZE) + this.borderSizeLeftAndRight, (snake[i].y * this.BOXSIZE) + this.borderSizeTopBottom, this.BOXSIZE, this.BOXSIZE);
 
                 context.strokeStyle = '#383838';
@@ -124,7 +124,7 @@ define( function() {
         },
 
         displayFood:function(food) {
-            context.fillStyle = '#fd4d9d';
+            context.fillStyle = '#e7e7e7';
             context.fillRect( ((food.x * this.BOXSIZE) + this.borderSizeLeftAndRight), (food.y * this.BOXSIZE) + this.borderSizeTopBottom, this.BOXSIZE, this.BOXSIZE);
 
             context.strokeStyle = '#383838';
