@@ -26,10 +26,7 @@ define( function() {
         snake.push(new Pos(xSnakeHead -2, ySnakeHead));
         snake.push(new Pos(xSnakeHead -3, ySnakeHead));
         snake.push(new Pos(xSnakeHead -4, ySnakeHead));
-        snake.push(new Pos(xSnakeHead -5, ySnakeHead));
-        snake.push(new Pos(xSnakeHead -6, ySnakeHead));
-        snake.push(new Pos(xSnakeHead -7, ySnakeHead));
-        snake.push(new Pos(xSnakeHead -8, ySnakeHead));
+
 
         return snake;
     }
