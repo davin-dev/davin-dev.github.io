@@ -107,7 +107,7 @@ define( function() {
             context.fillStyle = "#e7e7e7";
 
             context.textAlign = "center";
-            context.fillText("GAME OVER",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) - this.borderSizeTopBottom);
+            context.fillText("RIDI",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) - this.borderSizeTopBottom);
         },
 
         displayTryAgain:function(isMobile) {
@@ -117,9 +117,9 @@ define( function() {
             context.textAlign = "center";
 
             if (isMobile) {
-                context.fillText("Tap, to try again",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) + (this.BOXSIZE * 1.5));
+                context.fillText("dobare bezan",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) + (this.BOXSIZE * 1.5));
             } else {
-                context.fillText("Spacebar, to try again",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) + (this.BOXSIZE * 1.5));
+                context.fillText("dobare bezan",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) + (this.BOXSIZE * 1.5));
             }
         },
 
