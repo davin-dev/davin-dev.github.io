@@ -15,7 +15,7 @@ define( function() {
     }
 
     function generateSnakeHead(playground) {
-        // starting positing = center
+        
         var xSnakeHead = parseInt(playground.length / 2),
             ySnakeHead = parseInt(playground[0].length / 2);
 

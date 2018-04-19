@@ -61,7 +61,7 @@ define( function() {
                 numberX,
                 numberY;
 
-            // x and y splitted, to minimalize time for finding a free number
+            
             do {
                 numberX = generateNumber(playground.length -1);
                 foundX = checkIfNumberIsAvailableX(numberX, snake);
