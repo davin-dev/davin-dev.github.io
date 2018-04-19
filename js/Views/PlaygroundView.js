@@ -22,7 +22,7 @@ define( function() {
     }
 
     function setupCanvas() {
-        // context.translate(0.5,0.5);
+        
 
         var devicePixelRatio = window.devicePixelRatio || 1,
             backingStoreRatio = context.webkitBackingStorePixelRatio ||
@@ -58,7 +58,7 @@ define( function() {
     }
 
     function setBOXSIZE() {
-        // Values from Bootstrap
+        
         if (window.innerWidth >= 1220) {
             return 20;
         }
@@ -82,16 +82,16 @@ define( function() {
     PlaygroundView.prototype = {
 
         drawPlayground:function() {
-            context.fillStyle = '#ffffff';
+            context.fillStyle = '#383838';
             context.fillRect(this.borderSizeLeftAndRight, this.borderSizeTopBottom, this.canvasWidth - (this.borderSizeLeftAndRight * 2), this.canvasHeight - (this.borderSizeTopBottom * 2));
         },
 
         drawSnake:function(snake) {
             for (var i = 0; i < snake.length; i++) {
-                context.fillStyle = '#f08624';
+                context.fillStyle = '#5dc5f9';
                 context.fillRect((snake[i].x * this.BOXSIZE) + this.borderSizeLeftAndRight, (snake[i].y * this.BOXSIZE) + this.borderSizeTopBottom, this.BOXSIZE, this.BOXSIZE);
 
-                context.strokeStyle = '#ffffff';
+                context.strokeStyle = '#383838';
                 context.lineWidth   = 1;
                 context.strokeRect((snake[i].x * this.BOXSIZE) + this.borderSizeLeftAndRight, (snake[i].y * this.BOXSIZE) + this.borderSizeTopBottom, this.BOXSIZE, this.BOXSIZE);
             }
@@ -104,14 +104,14 @@ define( function() {
         displayGameOver:function() {
             var fontSize = this.BOXSIZE * 3;
             context.font = fontSize + 'px Calibri';
-            context.fillStyle = "#5b615c";
+            context.fillStyle = "#e7e7e7";
 
             context.textAlign = "center";
             context.fillText("GAME OVER",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) - this.borderSizeTopBottom);
         },
 
         displayTryAgain:function(isMobile) {
-            context.fillStyle = "#5b615c";
+            context.fillStyle = "#e7e7e7";
             var fontSize = this.BOXSIZE * 1.2;
             context.font = fontSize + 'px Calibri';
             context.textAlign = "center";
@@ -124,10 +124,10 @@ define( function() {
         },
 
         displayFood:function(food) {
-            context.fillStyle = '#2accec';
+            context.fillStyle = '#fd4d9d';
             context.fillRect( ((food.x * this.BOXSIZE) + this.borderSizeLeftAndRight), (food.y * this.BOXSIZE) + this.borderSizeTopBottom, this.BOXSIZE, this.BOXSIZE);
 
-            context.strokeStyle = '#ffffff';
+            context.strokeStyle = '#383838';
             context.lineWidth   = 1;
             context.strokeRect( ((food.x * this.BOXSIZE) + this.borderSizeLeftAndRight), (food.y * this.BOXSIZE) + this.borderSizeTopBottom, this.BOXSIZE, this.BOXSIZE);
         },
@@ -143,13 +143,13 @@ define( function() {
 
             var fontSize = this.BOXSIZE * 2;
             context.font = fontSize + 'px Calibri';
-            context.fillStyle = "#5b615c";
+            context.fillStyle = "#f4f4f4";
 
             context.textAlign = "left";
-            context.fillText("Score: " + score, 2 * this.BOXSIZE + this.borderSizeLeftAndRight, 3 * this.BOXSIZE);
+            context.fillText("Emtiaz: " + score, 2 * this.BOXSIZE + this.borderSizeLeftAndRight, 3 * this.BOXSIZE);
 
             context.textAlign = "right";
-            context.fillText("Highscore: " + highscore,  this.canvasWidth - (2 * this.BOXSIZE) - this.borderSizeLeftAndRight,  3 * this.BOXSIZE);
+            context.fillText("Bishtarin Emtiaz: " + highscore,  this.canvasWidth - (2 * this.BOXSIZE) - this.borderSizeLeftAndRight,  3 * this.BOXSIZE);
         }
 
     };
