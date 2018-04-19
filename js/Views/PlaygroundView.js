@@ -102,7 +102,7 @@ define( function() {
         },
 
         displayGameOver:function() {
-            var fontSize = this.BOXSIZE * 3;
+            var fontSize = this.BOXSIZE * 2.8;
             context.font = fontSize + 'px Calibri';
             context.fillStyle = "#e7e7e7";
 
