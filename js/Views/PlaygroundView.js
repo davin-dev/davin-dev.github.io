@@ -107,7 +107,7 @@ define( function() {
             context.fillStyle = "#e7e7e7";
 
             context.textAlign = "center";
-            context.fillText("RIDI",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) - this.borderSizeTopBottom);
+            context.fillText("moteasefane shoma bakhti",  (this.canvasWidth / 2) - this.borderSizeLeftAndRight, (this.canvasHeight / 2) - this.borderSizeTopBottom);
         },
 
         displayTryAgain:function(isMobile) {
