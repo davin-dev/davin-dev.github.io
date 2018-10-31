@@ -57,7 +57,7 @@ function( Snake, Rules, Playground, Score, PlaygroundView ) {
                     score.saveHighscore();
                 }
 
-            }, 100);
+            }, 200);
         }
 
         function draw() {
