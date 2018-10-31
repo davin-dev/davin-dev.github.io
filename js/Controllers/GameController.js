@@ -57,7 +57,11 @@ function( Snake, Rules, Playground, Score, PlaygroundView ) {
                     score.saveHighscore();
                 }
 
+<<<<<<< HEAD
             }, 200);
+=======
+            }, 120);
+>>>>>>> origin/master
         }
 
         function draw() {
