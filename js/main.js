@@ -1,5 +1,5 @@
 
-require(['Controllers/GameController'], function(GameController){
+require(['./Controllers/GameController'], function (GameController) {
 
     GameController.startGame();
 });
