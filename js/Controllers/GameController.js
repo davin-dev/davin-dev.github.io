@@ -57,7 +57,7 @@ define(['Models/Snake', 'Models/Rules', 'Models/Playground', 'Models/Score', 'Vi
                         score.saveHighscore();
                     }
 
-                }, 200);
+                }, 200);//comment
             }
 
             function draw() {
